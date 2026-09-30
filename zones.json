@@ -1,0 +1,110 @@
+{
+  "poll_seconds": 300,
+  "lookback_days": 15,
+  "rearm_after_bars": 3,
+  "confirm": {
+    "structure_bars": 3,
+    "sva_required": false
+  },
+  "symbols": [
+    {
+      "id": "BTCUSDT",
+      "data_symbol": "BTC-USD",
+      "enabled": true,
+      "source_note": "Yahoo proxy; validate against BINANCE:BTCUSDT before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line",
+          "label": "soli buy",
+          "side": "buy",
+          "line": 82230.71,
+          "enabled": true
+        },
+        {
+          "id": "soli-buy-sva-rectangle",
+          "label": "soli buy SVA rectangle",
+          "side": "buy",
+          "lower": 80152.0,
+          "upper": 81431.0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "ETHUSDT",
+      "data_symbol": "ETH-USD",
+      "enabled": true,
+      "source_note": "Yahoo proxy; validate against BINANCE:ETHUSDT before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line",
+          "label": "sva soli buy",
+          "side": "buy",
+          "line": 2638.80,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "XAUUSD",
+      "data_symbol": "GC=F",
+      "enabled": true,
+      "source_note": "Yahoo COMEX proxy; validate against OANDA:XAUUSD before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line",
+          "label": "soli buy",
+          "side": "buy",
+          "line": 4109.13,
+          "enabled": true
+        },
+        {
+          "id": "sva-sell-rectangle",
+          "label": "SVA sell rectangle",
+          "side": "sell",
+          "lower": 4280.0,
+          "upper": 4298.5,
+          "enabled": true
+        },
+        {
+          "id": "soli-buy-rectangle",
+          "label": "soli buy rectangle",
+          "side": "buy",
+          "lower": 4002.0,
+          "upper": 4110.0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "XAGUSD",
+      "data_symbol": "SI=F",
+      "enabled": true,
+      "source_note": "Yahoo COMEX proxy; validate against OANDA:XAGUSD before live use",
+      "zones": [
+        {
+          "id": "soli-sell-line",
+          "label": "soli sell",
+          "side": "sell",
+          "line": 64.17939,
+          "enabled": true
+        },
+        {
+          "id": "soli-buy-support-line",
+          "label": "soli buy / 4h support",
+          "side": "buy",
+          "line": 60.2095,
+          "enabled": true
+        },
+        {
+          "id": "soli-sva-sell-rectangle",
+          "label": "soli SVA sell rectangle",
+          "side": "sell",
+          "lower": 64.199,
+          "upper": 65.100,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}
