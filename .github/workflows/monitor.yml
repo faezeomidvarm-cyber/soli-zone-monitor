@@ -2,8 +2,8 @@ name: fafi monitor
 
 on:
   schedule:
-    # GitHub interprets this in UTC. The job checks the latest closed 15m bar.
-    - cron: "*/15 * * * *"
+    # GitHub interprets this in UTC. Scheduled runs can still be delayed.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:

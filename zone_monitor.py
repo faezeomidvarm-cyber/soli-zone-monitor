@@ -90,8 +90,9 @@ def fetch_15m(ticker: str, lookback_days: int = 5) -> pd.DataFrame:
     if getattr(frame.index, "tz", None) is not None:
         frame.index = frame.index.tz_convert("UTC").tz_localize(None)
     frame = frame.sort_index()
-    # The newest Yahoo candle may still be forming. Confirmations use closed bars.
-    return frame.iloc[:-1] if len(frame) > 1 else frame
+    # Keep the newest candle for early zone-touch detection. The caller uses
+    # only the preceding closed candles for the 15m confirmation.
+    return frame
 
 
 def resample_4h(frame: pd.DataFrame) -> pd.DataFrame:
@@ -229,7 +230,13 @@ def run_cycle(config_path: Path, state_path: Path, log_path: Path) -> int:
             frame = fetch_15m(ticker, int(config.get("lookback_days", 5)))
             if frame.empty:
                 continue
-            bias = trend_bias(frame)
+            if len(frame) > 1:
+                closed_frame = frame.iloc[:-1]
+            else:
+                closed_frame = frame
+            bias = trend_bias(closed_frame)
+            # The newest Yahoo candle may still be forming. This is intentional:
+            # it reduces zone-touch alert latency. Confirmation remains closed-bar only.
             candle = frame.iloc[-1]
         except Exception as exc:  # one bad symbol must not stop the watchlist
             print(f"[ERROR] {symbol}: {exc}", file=sys.stderr)
@@ -255,7 +262,7 @@ def run_cycle(config_path: Path, state_path: Path, log_path: Path) -> int:
                     lifecycle["touch_sent"] = True
                     emitted += 1
                 if lifecycle["touch_sent"] and not lifecycle["confirm_sent"]:
-                    if confirmation(frame, zone, bias, int(config["confirm"].get("structure_bars", 3))):
+                    if confirmation(closed_frame, zone, bias, int(config["confirm"].get("structure_bars", 3))):
                         message = format_event(symbol, zone, "CONFIRMED_15M", price, bias)
                         print(message)
                         print(send_telegram(message))

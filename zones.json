@@ -77,6 +77,101 @@
       ]
     },
     {
+      "id": "NZDUSD",
+      "data_symbol": "NZDUSD=X",
+      "enabled": true,
+      "source_note": "Yahoo proxy; validate against OANDA:NZDUSD before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line-20261004",
+          "label": "soli buy",
+          "side": "buy",
+          "line": 0.56227,
+          "enabled": true
+        },
+        {
+          "id": "soli-sell-line-20261004",
+          "label": "soli sell",
+          "side": "sell",
+          "line": 0.57820,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "AUDUSD",
+      "data_symbol": "AUDUSD=X",
+      "enabled": true,
+      "source_note": "Yahoo proxy; validate against OANDA:AUDUSD before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line-20261004",
+          "label": "soli buy",
+          "side": "buy",
+          "line": 0.69584,
+          "enabled": true
+        },
+        {
+          "id": "soli-sell-line-20261004",
+          "label": "soli sell",
+          "side": "sell",
+          "line": 0.70505,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "EURUSD",
+      "data_symbol": "EURUSD=X",
+      "enabled": true,
+      "source_note": "Yahoo proxy; validate against OANDA:EURUSD before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line-20261004",
+          "label": "soli buy",
+          "side": "buy",
+          "line": 1.11680,
+          "enabled": true
+        },
+        {
+          "id": "soli-sell-line-1-20261004",
+          "label": "soli sell 1",
+          "side": "sell",
+          "line": 1.14162,
+          "enabled": true
+        },
+        {
+          "id": "soli-sell-line-2-20261004",
+          "label": "soli sell 2",
+          "side": "sell",
+          "line": 1.15275,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "BRENT",
+      "data_symbol": "BZ=F",
+      "enabled": true,
+      "source_note": "Yahoo futures proxy; validate against the exact broker Brent symbol before live use",
+      "zones": [
+        {
+          "id": "soli-buy-line-20261004",
+          "label": "soli buy",
+          "side": "buy",
+          "line": 89.48,
+          "enabled": true
+        },
+        {
+          "id": "soli-sell-line-20261004",
+          "label": "soli sell",
+          "side": "sell",
+          "line": 104.14,
+          "enabled": true
+        }
+      ]
+    },
+    {
       "id": "XAGUSD",
       "data_symbol": "SI=F",
       "enabled": true,
