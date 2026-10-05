@@ -2,4 +2,5 @@
 .venv/
 state.json
 alerts.jsonl
+backtest_report.json
 __pycache__/
