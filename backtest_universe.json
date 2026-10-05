@@ -1,0 +1,40 @@
+{
+  "watchlist": [
+    {"id": "XAUUSD", "data_symbol": "GC=F", "source": "Yahoo COMEX proxy; TradingView OANDA:XAUUSD"},
+    {"id": "XAGUSD", "data_symbol": "SI=F", "source": "Yahoo COMEX proxy; TradingView OANDA:XAGUSD"},
+    {"id": "BRENT", "data_symbol": "BZ=F", "source": "Yahoo futures proxy; TradingView BRENT"},
+    {"id": "EURNZD", "data_symbol": "EURNZD=X", "source": "Yahoo FX proxy; TradingView OANDA:EURNZD"},
+    {"id": "CADJPY", "data_symbol": "CADJPY=X", "source": "Yahoo FX proxy; TradingView OANDA:CADJPY"},
+    {"id": "AUDJPY", "data_symbol": "AUDJPY=X", "source": "Yahoo FX proxy; TradingView OANDA:AUDJPY"},
+    {"id": "EURGBP", "data_symbol": "EURGBP=X", "source": "Yahoo FX proxy; TradingView OANDA:EURGBP"},
+    {"id": "GBPJPY", "data_symbol": "GBPJPY=X", "source": "Yahoo FX proxy; TradingView FX:GBPJPY"},
+    {"id": "NZDUSD", "data_symbol": "NZDUSD=X", "source": "Yahoo FX proxy; TradingView OANDA:NZDUSD"},
+    {"id": "USDJPY", "data_symbol": "JPY=X", "source": "Yahoo FX proxy; TradingView FX:USDJPY"},
+    {"id": "GBPUSD", "data_symbol": "GBPUSD=X", "source": "Yahoo FX proxy; TradingView OANDA:GBPUSD"},
+    {"id": "AUDCAD", "data_symbol": "AUDCAD=X", "source": "Yahoo FX proxy; TradingView OANDA:AUDCAD"},
+    {"id": "EURCAD", "data_symbol": "EURCAD=X", "source": "Yahoo FX proxy; TradingView OANDA:EURCAD"},
+    {"id": "EURJPY", "data_symbol": "EURJPY=X", "source": "Yahoo FX proxy; TradingView OANDA:EURJPY"},
+    {"id": "EURUSD", "data_symbol": "EURUSD=X", "source": "Yahoo FX proxy; TradingView OANDA:EURUSD"},
+    {"id": "AUDNZD", "data_symbol": "AUDNZD=X", "source": "Yahoo FX proxy; TradingView OANDA:AUDNZD"},
+    {"id": "AUDUSD", "data_symbol": "AUDUSD=X", "source": "Yahoo FX proxy; TradingView OANDA:AUDUSD"}
+  ],
+  "redlist": [
+    {"id": "BTCUSDT", "data_symbol": "BTC-USD", "source": "Yahoo crypto proxy"},
+    {"id": "ETHUSD", "data_symbol": "ETH-USD", "source": "Yahoo crypto proxy"},
+    {"id": "LINKUSDT", "data_symbol": "LINK-USD", "source": "Yahoo crypto proxy"},
+    {"id": "XRPUSDT", "data_symbol": "XRP-USD", "source": "Yahoo crypto proxy"},
+    {"id": "AAVEUSDT", "data_symbol": "AAVE-USD", "source": "Yahoo crypto proxy"},
+    {"id": "SANDUSDT", "data_symbol": "SAND-USD", "source": "Yahoo crypto proxy"},
+    {"id": "GRTUSDT", "data_symbol": "GRT-USD", "source": "Yahoo crypto proxy"},
+    {"id": "XLMUSDT", "data_symbol": "XLM-USD", "source": "Yahoo crypto proxy"},
+    {"id": "NEOUSDT", "data_symbol": "NEO-USD", "source": "Yahoo crypto proxy"},
+    {"id": "AVAXUSDT", "data_symbol": "AVAX-USD", "source": "Yahoo crypto proxy"},
+    {"id": "SOLUSDT", "data_symbol": "SOL-USD", "source": "Yahoo crypto proxy"},
+    {"id": "LTCUSD", "data_symbol": "LTC-USD", "source": "Yahoo crypto proxy"},
+    {"id": "GBPAUD", "data_symbol": "GBPAUD=X", "source": "Yahoo FX proxy; TradingView OANDA:GBPAUD"},
+    {"id": "BNBUSDT", "data_symbol": "BNB-USD", "source": "Yahoo crypto proxy"},
+    {"id": "DOGEUSDT", "data_symbol": "DOGE-USD", "source": "Yahoo crypto proxy"},
+    {"id": "DOTUSDT", "data_symbol": "DOT-USD", "source": "Yahoo crypto proxy"},
+    {"id": "SUIUSDT", "data_symbol": "SUI-USD", "source": "Yahoo crypto proxy"}
+  ]
+}

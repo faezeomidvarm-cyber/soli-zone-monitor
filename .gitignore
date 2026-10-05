@@ -3,4 +3,5 @@
 state.json
 alerts.jsonl
 backtest_report.json
+volume_profile_report.json
 __pycache__/
